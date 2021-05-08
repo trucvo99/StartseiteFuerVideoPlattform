@@ -1,0 +1,194 @@
+<!------------- Truc Vo --------->
+<!-----Matrikelnummer: 2575005 --------->
+
+<!-- Mine Idee basiert auf dem Youtube-Plattform, wo Videos hochgeladen, angeschaut bzw.
+kommentiert werden kann -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Startseite</title>
+        <meta charset ="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+
+    <style type="text/css">
+
+        /* Design für Header-Background: Startseite, VIDAN; VideoAnschauen */
+        header {
+            background-color: purple;
+            background-image: linear-gradient(purple, pink);
+            padding: none;
+            font-size: 35px;
+            color: white;
+            height: 200px;
+            position: relative;
+        }
+
+        /* Design für das Wort "Startseite" */
+        h1{
+            font-family: sans-serif;
+            text-align: left;
+            float: inline-start;
+            font-size: 20px;
+            position: relative;
+        }
+
+        /* Design für das Wort "VIDAN" */
+        h2 {
+            font-family:sans-serif;
+            font-size: 100px;
+            font-weight: bolder;
+            text-align: center;
+            color: powderblue;
+            top: -80px;
+            position: relative;
+        }
+
+        /* Design für das Wort "VideoAnschauen" */
+        h3 {
+            font-family:sans-serif;
+            font-size: 40px;
+            text-align: center;
+            color: whitesmoke;
+            top: -175px;
+            position: relative;
+        }
+
+        /* Texte im Body wird generell in sans-serif geschrieben.
+        Nicht gültig für Overwriting von class/method */
+        body {
+            font-family: sans-serif;
+            background-color:palevioletred;
+
+        }
+
+        /* alle Bilder mit <img> haben diese folgende Größe */
+        img {
+            width: 200px;
+            height: 150px;
+            position: relative;
+        }
+
+        section::after {
+            content: " ";
+            display: table;
+            clear: both;
+        }
+
+        /* Design für die Menüleiste auf der linken Seite */
+        .flex-container_menu {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: baseline;
+            align-content: space-between;
+        }
+
+        .flex-container_menu > div {
+            background-color: lavender;
+            color: black;
+            text-align: center;
+            line-height: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        nav {
+            float: left;
+            width: 12.45%;
+            height: 300px;
+            background:lavender;
+            background-image: linear-gradient(violet, lavender);
+            padding: 20px;
+            position: relative;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            position:relative;
+        }
+
+        /* Design für das Wort "Menü" */
+        h4 {
+            font-family: sans-serif;
+            font-size: 30px;
+            color: black;
+            font-weight: bold;
+            float:justify;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        /* Design für Kategorie in der Menüleister */
+        tag {
+            font-family: sans-serif;
+            font-size: 14px;
+            color: black;
+            font-style:inherit;
+            text-align: center;
+            border: 1px solid grey;
+            border-radius: 8px;
+            width: 100px;
+            height: 20px;
+            margin-bottom: 6px;
+            position: relative;
+        }
+        
+        /* Design für das Login-Button in der Menüleiste*/
+        button {
+            width: 100px;
+            height: 20px;
+            border-radius: 5px;
+            border:none;
+            background-color: plum;
+            color: black;
+            text-align: center;
+            font-weight: bolder;
+            position: relative;
+        }
+
+        /* Die @media ist zum Anwednden für verschiedene Stile/Style/Anzeige von
+        verschiedenen Medientypen/Geräte wie z.B. Mobile, Desktop... */
+        @media (max-width: 600px){
+            nav, img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Startseite</h1>
+            <h2>VIDAN</h2>
+            <h3>VideoAnschauen</h3>
+        </header>
+        <section>
+            <nav>
+                <h4> MENÜ </h4>
+                <div class="flex-container_menu">
+                    <tag> Musikvideos </tag>
+                    <tag> Movie Trailers </tag>
+                    <tag> Vlogs </tag>
+                    <tag> Mediathek </tag>
+                    <tag> Ablauf </tag>
+                    <tag> Aboniert </tag>
+                    <ul>
+                        <button><li><a href="/login">Login</a></li></button>
+                    </ul>   
+                </div>  
+            </nav>
+            <img src="mv_punch_nct127.jpg" alt="Musikvideo NCT">
+            <img src="mv_blackpink.jpg" alt="Musikvideo BP">
+            <img src="vlog_travel.jpg" alt="Vlogs Travel">
+            <img src="vlog_study.jpg" alt="Vlogs Study">
+            <img src="trailer1.jpg" alt="Movie Trailer 1">
+            <img src="trailer2.jpg" alt="Movie Trailer 2">
+            <img src="nachrichten_tagesschau.jpg" alt="Video Nachrichten">
+        </section>
+    </body>
+</html>
+
